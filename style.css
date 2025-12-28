@@ -10,8 +10,8 @@ body {
   font-family: Poppins, Arial, sans-serif;
   color: #172b4d;
   background-image: url("assets/images/bg-header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* HEADER */
