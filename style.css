@@ -7,7 +7,7 @@
 
 /* BODY */
 body {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   color: #172b4d;
   background-image: url("assets/images/bg-header.png");
     background-repeat: no-repeat;
@@ -46,30 +46,16 @@ body {
   flex-direction: column;
   gap: 1rem;
   padding: 10%;
+  background-image: url("./assets/images/header-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
 }
 
 .headline h1 {
   font-size: 48px;
   line-height: 60px;
-  font-weight: 700;
   color: #172b4d;
-}
-
-.toolbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 10%;
-  background-color: #fff;
-}
-
-.headline {
-  display: flex;
-  flex-direction: column;
-  padding: 10%;
-  background-image: url("./assets/images/header-bg.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
 }
 
 .description {
@@ -101,7 +87,7 @@ body {
 }
 
 /* DESKTOP */
-@media (min-width: 768px) {
+@media (width >= 768px) {
   .headline {
     width: 60%;
     padding: 8% 10%;
