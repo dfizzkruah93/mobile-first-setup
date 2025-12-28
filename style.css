@@ -1,4 +1,113 @@
-h1 {
-  font-size: 2.5em;
-  color: #333;
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #172b4d;
+  background-image: url("assets/images/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 10%;
+}
+
+.logo {
+  font-weight: 700;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #344563;
+  font-weight: 500;
+}
+
+/* HEADLINE */
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10%;
+}
+
+.headline h1 {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 10%;
+  background-color: #fff;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  background-image: url("./assets/images/header-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #344563;
+}
+
+.connect {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-top: 12px;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.social a {
+  text-decoration: none;
+  color: #505f79;
+  font-weight: 600;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .headline {
+    width: 60%;
+    padding: 8% 10%;
+  }
+
+  .headline h1 {
+    font-size: 3rem;
+  }
 }
