@@ -289,7 +289,7 @@ body {
 }
 
 .contact-form button:focus {
-  outline: 2px solid #fff;
+  outline: 2px solid #6070ff;
   outline-offset: 2px;
 }
 
