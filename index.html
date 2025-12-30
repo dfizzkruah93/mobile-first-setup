@@ -13,11 +13,29 @@
   <header class="toolbar">
     <a href="#" class="logo">My Logo</a>
 
+    <!-- Desktop Navigation -->
     <nav class="nav">
       <ul class="nav-list">
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Hamburger Button -->
+    <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="mobile-menu">
+      <button id="close-menu-btn" class="close-menu-btn" aria-label="Close menu">✕</button>
+      <ul class="mobile-nav-list">
+        <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -57,7 +75,7 @@
   </section>
 
   
-  <section id="works">
+  <section id="portfolio">
     <h2>My Recent Works</h2>
   
     <div class="projects-grid">
@@ -145,7 +163,7 @@
     </div>
   </section>
 
-  <section class="headline1">
+  <section id="about" class="headline1">
     <div class="about-summary">
       <h3>About Myself</h3>
       <p>
@@ -224,6 +242,7 @@
   </section>
 
 
+  <script src="app.js"></script>
 </body>
 
 </html>
