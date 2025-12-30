@@ -11,7 +11,8 @@ html {
 }
 
 /* Prevent horizontal scrolling; keep vertical scroll */
-html, body {
+html,
+body {
   overflow: hidden auto;
 }
 
@@ -262,8 +263,6 @@ body {
   outline-offset: 2px;
 }
 
-
-
 .about-summary button:hover {
   background: #f0f2ff;
   box-shadow: 0 4px 12px rgb(96 112 255 / 20%);
@@ -278,7 +277,6 @@ body {
   outline: 2px solid #6070ff;
   outline-offset: 2px;
 }
-
 
 .contact-form button:hover {
   background: #f0f2ff;
