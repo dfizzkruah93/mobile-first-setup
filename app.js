@@ -184,4 +184,24 @@ document.addEventListener('DOMContentLoaded', () => {
       mobileMenu.classList.remove('active');
     }
   });
+
+  // Email validation for contact form
+  const contactForm = document.querySelector('.contact-form');
+  const emailInput = document.querySelector('input[name="email"]');
+  const emailError = document.getElementById('email-error');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (event) => {
+      const emailValue = emailInput.value;
+
+      // Check if email contains any uppercase letters
+      if (emailValue !== emailValue.toLowerCase()) {
+        event.preventDefault();
+        emailError.textContent = 'Email must be in lowercase letters only.';
+        emailError.style.display = 'block';
+      } else {
+        emailError.style.display = 'none';
+      }
+    });
+  }
 });

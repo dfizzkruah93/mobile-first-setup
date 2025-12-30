@@ -857,6 +857,13 @@ body {
   outline-offset: 2px;
 }
 
+.email-error {
+  display: none;
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
 /* MOBILE DEVICES (375px - 767px) */
 @media (width >= 375px) and (width < 768px) {
   body {

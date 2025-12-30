@@ -23,7 +23,7 @@
     </nav>
 
     <!-- Mobile Hamburger Button -->
-    <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle menu">
+    <button id="hamburger-btn" class="hamburger-btn" type="button" aria-label="Toggle menu">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
@@ -31,7 +31,7 @@
 
     <!-- Mobile Menu -->
     <nav id="mobile-menu" class="mobile-menu">
-      <button id="close-menu-btn" class="close-menu-btn" aria-label="Close menu">✕</button>
+      <button id="close-menu-btn" class="close-menu-btn" type="button" aria-label="Close menu">✕</button>
       <ul class="mobile-nav-list">
         <li><a href="#portfolio" class="mobile-nav-link">Portfolio</a></li>
         <li><a href="#about" class="mobile-nav-link">About</a></li>
@@ -85,7 +85,7 @@
   <!-- Project Details Popup -->
   <div id="project-popup" class="project-popup">
     <div class="popup-content">
-      <button id="close-popup-btn" class="close-popup-btn" aria-label="Close popup">✕</button>
+      <button id="close-popup-btn" class="close-popup-btn" type="button" aria-label="Close popup">✕</button>
       <div class="popup-image">
         <img id="popup-img" src="" alt="" />
       </div>
@@ -132,7 +132,7 @@
           <a href="#"><img src="assets/images/medium.svg" alt="Medium" /></a>
         </li>
       </ul>
-      <button>Get my resume</button>
+      <button type="button">Get my resume</button>
     </div>
 
     <!-- SKILLS SECTION (code replacement for skill_list.png) -->
@@ -179,6 +179,7 @@
       <input type="text" name="name" placeholder="Your name" required />
       <input type="email" name="email" placeholder="Your email" required />
       <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+      <div id="email-error" class="email-error"></div>
       <button type="submit">Get in touch</button>
     </form>
   </section>
